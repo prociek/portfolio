@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My persolan portfolio",
+  "scripts": {
+    "start": "rm -rf ./dist && rm -rf .parcel-cache && parcel serve ./src/index.html",
+    "build": "rm -rf ./dist && rm -rf .parcel-cache && parcel build ./src/index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prociek/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prociek/portfolio/issues"
+  },
+  "homepage": "https://github.com/prociek/portfolio#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-nightly.752",
+    "modules": "^0.4.0",
+    "parcel": "^2.0.0-nightly.750",
+    "postcss-plugin": "^1.0.0",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
