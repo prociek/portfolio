@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My persolan portfolio",
   "scripts": {
-    "start": "rm -rf ./dist && rm -rf .parcel-cache && parcel serve ./src/index.html",
+    "start": "rm -rf ./dist && rm -rf .parcel-cache && parcel serve ./src/index.html --open",
     "build": "rm -rf ./dist && rm -rf .parcel-cache && parcel build ./src/index.html --public-url ./"
   },
   "repository": {
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/prociek/portfolio#readme",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.0.0-nightly.2374",
     "@parcel/transformer-sass": "^2.0.0-nightly.752",
+    "@parcel/transformer-webmanifest": "^2.0.0-nightly.2374",
     "modules": "^0.4.0",
     "parcel": "^2.0.0-nightly.750",
     "postcss-plugin": "^1.0.0",
