@@ -23,3 +23,44 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* RESET */
+
+/* Remove all margin and padding in all elements, inherit box-sizing that we set to border-box */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $primary-font, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: $tertiary-color;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
