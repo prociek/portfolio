@@ -68,4 +68,16 @@
       border-top: 1px solid $tertiary-color;
     }
   }
+
+  &__heading {
+    &-1 {
+      display: inline-block;
+      font-size: 3rem;
+      border-bottom: 3px solid $accent-color;
+    }
+
+    &-2 {
+      font-size: 2rem;
+    }
+  }
 }
