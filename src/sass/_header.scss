@@ -72,12 +72,14 @@
   &__heading {
     &-1 {
       display: inline-block;
-      font-size: 3rem;
+      font-size: 2.8rem;
+      font-weight: 500;
       border-bottom: 3px solid $accent-color;
     }
 
     &-2 {
       font-size: 2rem;
+      font-weight: 400;
     }
   }
 }
