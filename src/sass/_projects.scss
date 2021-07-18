@@ -10,7 +10,7 @@
     border-radius: 0.4rem;
     overflow: hidden;
     background-color: $secondary-color;
-    margin: 2.4rem auto;
+    margin: 2.4rem auto 0 auto;
 
     &__heading {
       margin-top: 2rem;
@@ -22,6 +22,7 @@
       padding: 2rem;
       font-size: 1.4rem;
       text-align: justify;
+      line-height: 1.4;
     }
   }
 }

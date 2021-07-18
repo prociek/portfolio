@@ -26,10 +26,8 @@
   }
 
   &__hamburger {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: center;
-    align-items: center;
     width: 4.8rem;
     height: 4.8rem;
     margin-right: 2rem;
