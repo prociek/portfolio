@@ -26,9 +26,9 @@
     <title>Tp Developer</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__nav-group">
-        <nav class="header__nav">
+        <nav class="header__nav" id="nav" aria-expanded="false">
           <ul class="header__list">
             <li class="header__list-item"><a href="#home">home</a></li>
             <li class="header__list-item"><a href="#projects">projects</a></li>
@@ -36,7 +36,7 @@
             <li class="header__list-item"><a href="#contact">contact</a></li>
           </ul>
         </nav>
-        <button class="header__hamburger">
+        <button class="header__hamburger" id="toggle-nav">
           <span class="header__hamburger-bar1"></span>
           <span class="header__hamburger-bar2"></span>
           <span class="header__hamburger-bar3"></span>
@@ -56,7 +56,7 @@
       </picture>
     </header>
     <main>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2 class="section__heading">Projects</h2>
         <div class="projects__group">
           <article class="projects-card">
@@ -88,7 +88,7 @@
           </article>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="section__heading">About</h2>
         <div class="about__container">
           <div class="about__group">
@@ -141,7 +141,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="section__heading">Contact</h2>
         <div class="contact__group">
           <a href="mailto:procko.tomasz@gamil.com"
