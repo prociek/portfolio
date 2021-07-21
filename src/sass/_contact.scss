@@ -1,0 +1,12 @@
+.contact {
+  &__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    .contact__icon {
+      margin: 0.5rem;
+    }
+  }
+}

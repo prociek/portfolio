@@ -1,28 +1,26 @@
 .projects {
-  &__heading {
-    font-size: 2.8rem;
-    text-align: center;
-    margin-bottom: 3.6rem;
-  }
+  &__group {
+    margin-top: 3.6rem;
 
-  &-card {
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.8);
-    border-radius: 0.4rem;
-    overflow: hidden;
-    background-color: $secondary-color;
-    margin: 2.4rem auto 0 auto;
+    .projects-card {
+      box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.8);
+      border-radius: 0.4rem;
+      overflow: hidden;
+      background-color: $secondary-color;
+      margin: 2.4rem auto 0 auto;
 
-    &__heading {
-      margin-top: 2rem;
-      text-align: center;
-      font-size: 2.4rem;
-    }
+      &__heading {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 2.4rem;
+      }
 
-    &__description {
-      padding: 2rem;
-      font-size: 1.4rem;
-      text-align: justify;
-      line-height: 1.4;
+      &__description {
+        padding: 2rem;
+        font-size: 1.4rem;
+        text-align: justify;
+        line-height: 1.4;
+      }
     }
   }
 }
