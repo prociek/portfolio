@@ -13,7 +13,7 @@
     $primary-color
   );
 
-  &__nav-group {
+  &__nav-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,8 +21,20 @@
     height: 5rem;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: $primary-color;
+
+    .header__logo {
+      margin-left: 2rem;
+      height: 3.6rem;
+      border-radius: 0.2rem;
+      overflow: hidden;
+      cursor: pointer;
+
+      & img {
+        height: 100%;
+      }
+    }
 
     .header__nav {
       position: absolute;
@@ -53,7 +65,7 @@
       height: 4.8rem;
       margin-right: 2rem;
       background-color: $primary-color;
-
+      cursor: pointer;
       border: none;
 
       & * {
@@ -100,11 +112,39 @@
       font-size: 2.8rem;
       font-weight: 500;
       border-bottom: 3px solid $accent-color;
+      animation: slideHeaderTop 500ms ease-out;
     }
 
     &-2 {
       font-size: 2rem;
       font-weight: 400;
+      animation: slideHeaderBottom 500ms ease-out;
     }
+  }
+}
+
+@keyframes slideHeaderTop {
+  from {
+    transform: translateY(-20rem);
+    opacity: 0;
+    padding-bottom: 6rem;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    padding-bottom: 0;
+  }
+}
+
+@keyframes slideHeaderBottom {
+  from {
+    transform: translateY(30rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
