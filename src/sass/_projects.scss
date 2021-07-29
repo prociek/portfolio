@@ -21,6 +21,21 @@
         text-align: justify;
         line-height: 1.4;
       }
+
+      &__links-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+
+        .projects-card__link {
+          display: block;
+          color: #b1b299;
+          background: #4c4637;
+          padding: 0.5rem 1rem;
+          border-radius: 2px;
+        }
+      }
     }
   }
 }

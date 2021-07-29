@@ -45,7 +45,6 @@ class Navigation {
     this.navItems.forEach((item) => {
       item.addEventListener("click", () => {
         this.toggleNav();
-        console.log("nav clicked");
       });
     });
   }
