@@ -1,9 +1,20 @@
 .certificates {
   font-size: 1.5rem;
+
   &__list {
+    @media screen and (min-width: 75em) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &::after {
+      content: "";
+      flex: 0 0 50%;
+    }
     .certificates__item {
-      margin: 0.2rem 0;
-      width: 100%;
+      margin: 0.2rem auto;
+      max-width: 100%;
+      width: 39rem;
       background-color: $secondary-color;
 
       .certificates__button {
@@ -38,6 +49,10 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(3px);
+
+  & img {
+    max-width: 90%;
+  }
 }
 
 .modal-hidden {

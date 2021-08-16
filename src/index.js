@@ -60,14 +60,17 @@ class Navigation {
       this.toggleNavBtn.classList.add("closed");
     } else {
       this.nav.setAttribute("aria-expanded", "false");
-      this.navItems.forEach((item, idx) => {
-        this.slideNavItemOut(item, idx * 100);
-      });
+      Array.from(this.navItems)
+        .reverse()
+        .forEach((item, idx) => {
+          this.slideNavItemOut(item, idx * 100);
+        });
       this.toggleNavBtn.classList.remove("closed");
     }
   }
 
   configure() {
+    if (window.matchMedia("(hover: hover)").matches) return;
     this.toggleNavBtn.addEventListener("click", this.toggleNav.bind(this));
     this.navItems.forEach((item) => {
       item.addEventListener("click", () => {
@@ -87,7 +90,6 @@ class Modal {
 
   closeModal() {
     this.modal.classList.add("modal-hidden");
-    console.log("modal close");
   }
 
   openModal() {

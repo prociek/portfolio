@@ -1,10 +1,22 @@
 .about {
+  &__group {
+    @media screen and (min-width: 56.25em) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &__image-box {
     display: block;
     width: 12rem;
     border-radius: 1rem;
     overflow: hidden;
     margin: 2.8rem auto;
+
+    @media screen and (min-width: 56.25em) {
+      flex: 0 0 12rem;
+      margin: 0 4rem 0 0;
+    }
   }
 
   &__text {
