@@ -43,12 +43,27 @@
         justify-content: space-around;
         margin-bottom: 2rem;
 
-        .projects-card__link {
+        .projects-card__link,
+        .projects-card__link:link,
+        .projects-card__link:visited {
           display: block;
-          color: #b1b299;
-          background: #4c4637;
+          color: $secondary-color;
+          background-color: $primary-color;
           padding: 0.5rem 1rem;
           border-radius: 2px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          transition: all 200ms;
+
+          &:hover {
+            color: lighten($secondary-color, 20%);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+          }
+
+          &:active {
+            transform: translateY(0);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          }
 
           @media screen and (min-width: 75em) {
             font-size: 1.4rem;

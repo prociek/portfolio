@@ -16,21 +16,35 @@
       max-width: 100%;
       width: 39rem;
       background-color: $secondary-color;
+      cursor: pointer;
+      transition: all 200ms;
+
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+
+      &:hover .certificates__button::before {
+        font-size: 2.5rem;
+      }
 
       .certificates__button {
         display: flex;
+        position: relative;
         align-items: center;
         background-color: transparent;
         width: 100%;
         padding: 0.8rem 1.2rem;
+        margin-left: 3rem;
         border: none;
         text-align: left;
 
         &::before {
           content: "\01F50D";
           display: inline-block;
+          position: absolute;
+          left: -2.2rem;
           font-size: 2rem;
-          margin-right: 1rem;
+          transition: font-size 200ms;
         }
       }
     }

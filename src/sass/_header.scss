@@ -76,6 +76,16 @@
           background-color: $primary-color;
           color: $tertiary-color;
           border-top: 1px solid $tertiary-color;
+          transition: transform 200ms;
+
+          &:hover {
+            color: darken($tertiary-color, 20%);
+            transform: translateY(-2px);
+          }
+
+          &:active {
+            transform: translateY(0);
+          }
 
           @media screen and (min-width: 56.25rem) and (hover: hover) {
             border-top: none;
